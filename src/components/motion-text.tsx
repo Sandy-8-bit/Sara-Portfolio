@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 export default function MotionText({
@@ -9,10 +8,13 @@ export default function MotionText({
   delayOffset: number;
 }) {
   const text = children;
-  const segmenter = new (Intl as any).Segmenter("en", { granularity: "grapheme" });
-  const letters = Array.from(segmenter.segment(text), (s) => s.segment).map(
-    (letter) => (letter === " " ? "\u00A0" : letter),
-  );
+  const segmenter = new (Intl as any).Segmenter("en", {
+    granularity: "grapheme",
+  });
+  const letters = Array.from(
+    segmenter.segment(text),
+    (s: any) => s.segment
+  ).map((letter) => (letter === " " ? "\u00A0" : letter));
 
   return (
     <motion.div>
