@@ -15,7 +15,7 @@ export default function Model() {
       <div className="p-6 rounded-xl w-full md:w-[45%] space-y-4">
         <MotionDiv delayOffset={0.0}>
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
-            Meet Saras Assistant 🤖
+            Meet Sara’s Assistant 🤖
           </h2>
         </MotionDiv>
 
@@ -27,10 +27,7 @@ export default function Model() {
 
         <MotionDiv delayOffset={0.4}>
           <p className="text-base text-gray-700 dark:text-gray-300">
-            You don’t need to click or hover — just explore freely. I’ll be part of your experience,
-            always ready in the background. There’s no need to click or hover. Just explore the site
-            freely and enjoy your time. I’ll be right here in the background, quietly adding a sense
-            of life, fun, and friendliness to your journey.
+          Every time you click or move your mouse, I see it! But don’t worry — I’m not being creepy. I’m your friendly helper, just watching from the background. I get excited every time you scroll or click. You explore the site, and I’ll be here, quietly watching and cheering for you. 👀
           </p>
         </MotionDiv>
 

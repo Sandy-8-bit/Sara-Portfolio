@@ -16,15 +16,15 @@ const worksData: Work[] = [
     buttonText: "Sign up",
   },
   {
-    title: "Explore Nature",
-    description: "Experience serenity in high-resolution green landscapes.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    title: "Doctors Appoinment Booking",
+    description: "A user-friendly platform for booking appointments with doctors",
+    image: "./Doctor.png",
     buttonText: "Explore",
   },
   {
-    title: "Urban Geometry",
-    description: "Discover architecture in depth and symmetry.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    title: "Attendance Management ",
+    description: "A secure and efficient system for managing student attendance and attendance records",
+    image: "./Attend.png",
     buttonText: "Discover",
   },
 ];
