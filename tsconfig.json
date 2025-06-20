@@ -9,6 +9,8 @@
     }
   ],
   "compilerOptions": {
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "baseUrl": ".",
     "lib": ["dom", "esnext", "esnext.intl"],
     "paths": {
