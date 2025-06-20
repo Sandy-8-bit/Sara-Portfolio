@@ -1,0 +1,46 @@
+/* inside App.css or index.css */
+@font-face {
+  font-family: 'GoldenSignature';
+  src: url('../public/goldensignature/GoldenSignature.ttf') format('opentype');
+  font-display: swap;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .nav-links>* {
+    @apply relative;
+  }
+
+  .nav-links>*::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.25px;
+    background: black;
+    transition: width 0.2s ease-out;
+  }
+
+  .nav-links>*:hover::after {
+    width: 100%;
+  }
+}
