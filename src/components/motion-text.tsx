@@ -9,7 +9,7 @@ export default function MotionText({
   delayOffset: number;
 }) {
   const text = children;
-  const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
+  const segmenter = new (Intl as any).Segmenter("en", { granularity: "grapheme" });
   const letters = Array.from(segmenter.segment(text), (s) => s.segment).map(
     (letter) => (letter === " " ? "\u00A0" : letter),
   );
